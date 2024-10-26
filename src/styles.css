@@ -1,3 +1,20 @@
 .redes img{
     filter: invert(96%) sepia(0%) saturate(7483%) hue-rotate(103deg) brightness(107%) contrast(102%);
 }
+
+.hidden {
+    display: none;
+}
+
+/* Estilos generales */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}

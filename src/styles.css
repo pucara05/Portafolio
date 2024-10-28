@@ -6,10 +6,4 @@
     display: none;
 }
 
-/* Estilos generales */
-body {
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
-}
 

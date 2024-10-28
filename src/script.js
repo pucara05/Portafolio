@@ -18,17 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme") || "light";
     document.documentElement.classList.add(savedTheme);
     updateThemeIcon();
-});
 
+    // Verifica el tema cargado
+    console.log(`Tema cargado: ${savedTheme}`);
+});
 
 
 
 //Menu desplegable
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('hidden');
-    });
-});

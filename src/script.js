@@ -1,41 +1,34 @@
-// Navegación suave
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleThemeButton = document.getElementById("toggle-theme");
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Cambiar tema
-const toggleThemeButton = document.getElementById('toggle-theme');
-if (toggleThemeButton) {
-    // Inicializa el texto del botón según el tema actual
-    if (document.body.classList.contains('dark-theme')) {
-        toggleThemeButton.textContent = 'Cambiar a modo claro';
-    } else {
-        toggleThemeButton.textContent = 'Cambiar a modo oscuro';
+    function updateThemeIcon() {
+        const isDarkMode = document.documentElement.classList.contains("dark");
+        toggleThemeButton.innerText = isDarkMode ? "brightness_7" : "brightness_4";
     }
 
-    toggleThemeButton.addEventListener('click', () => {
-        document.body.classList.toggle('dark-theme');
-
-        // Cambia el texto del botón según el tema
-        if (document.body.classList.contains('dark-theme')) {
-            toggleThemeButton.textContent = 'Cambiar a modo claro'; // Muestra "Cambiar a modo claro" si está en modo oscuro
-        } else {
-            toggleThemeButton.textContent = 'Cambiar a modo oscuro'; // Muestra "Cambiar a modo oscuro" si está en modo claro
-        }
+    // Cambiar entre temas al hacer clic en el botón
+    toggleThemeButton.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+        const currentTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+        localStorage.setItem("theme", currentTheme);
+        updateThemeIcon();
     });
-}
 
-// Menú desplegable
-const menuButton = document.getElementById('menu-button');
-if (menuButton) {
-    menuButton.addEventListener('click', () => {
-        const nav = document.querySelector('nav');
-        nav.classList.toggle('hidden'); // Agrega o quita la clase 'hidden'
+    // Aplicar el tema guardado al cargar la página
+    const savedTheme = localStorage.getItem("theme") || "light";
+    document.documentElement.classList.add(savedTheme);
+    updateThemeIcon();
+});
+
+
+
+
+//Menu desplegable
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
     });
-}
+});

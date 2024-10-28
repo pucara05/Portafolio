@@ -13,8 +13,3 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
 
-/* Estilos para el modo oscuro */
-body.dark-theme {
-    background-color: black;
-    color: white;
-}

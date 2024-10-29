@@ -18,15 +18,15 @@
         <span class="text-3xl font-bold">LOGO</span>
         <nav class="flex flex-col sm:flex-row gap-4 py-4 text-lg font-semibold  ">
 
-            <a href="#"
+            <a href="#about"
                 class="px-3 py-2 rounded-lg text-cyan-600 dark:text-cyan-800 hover:bg-cyan-600 hover:text-white transition-all duration-300">
                 <span class="text-cyan-600 dark:text-cyan-800"></span>About me
             </a>
-            <a href="#"
+            <a href="#projects"
                 class="px-3 py-2 rounded-lg text-cyan-600 dark:text-cyan-800 hover:bg-cyan-600 hover:text-white transition-all duration-300">
                 <span class="text-cyan-600 dark:text-cyan-800"></span>Projects
             </a>
-            <a href="#"
+            <a href="#contact"
                 class="px-3 py-2 rounded-lg text-cyan-600 dark:text-cyan-800 hover:bg-cyan-600 hover:text-white transition-all duration-300">
                 <span class="text-cyan-600 dark:text-cyan-800"></span>Contact
             </a>
@@ -61,29 +61,28 @@
 
 
     <!-- Section two -->
-    <section
-        class="w-full h-90vh flex justify-center items-center gap-7 flex-wrap bg-stone-950 dark:bg-white  dark:text-black text-white p-10">
-        <img class="w-72 h-auto rounded-xl" src="/assets/foto.webp" alt="">
+  <section id="about" class="w-full h-auto flex flex-col md:flex-row justify-center items-center gap-7 bg-stone-950 dark:bg-white dark:text-black text-white p-5 md:p-10">
+    <img class="w-full max-w-xs h-auto rounded-xl" src="/assets/foto.webp" alt="">
 
-        <article class="flex flex-col gap-3">
-            <h2 class="text-2xl text-white dark:text-cyan-400 font-semibold max-sm:text-center">About me</h2>
-            <p class="max-w-xl max-sm:text-center  dark:text-black  text-3xl"> <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel provident hic voluptate quae animi
-                laboriosam itaque praesentium ratione reiciendis iste minima natus, omnis molestias quas esse
-                dignissimos non ipsam.
-            </p>
+    <article class="flex flex-col gap-3 max-w-xl w-full">
+        <h2 class="text-2xl text-white dark:text-cyan-400 font-semibold text-center">About me</h2>
+      <p class="dark:text-black text-3xl text-center max-w-full sm:text-2xl md:text-3xl lg:text-4xl overflow-visible">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel provident hic voluptate quae animi
+            laboriosam itaque praesentium ratione reiciendis iste minima natus, omnis molestias quas esse
+            dignissimos non ipsa hola.
+        </p>
 
-            <div class="flex gap-3 max-sm:justify-center max-sm:items-center  ">
-                <a class="bg-white " href="#"><img width="25px" src="/assets/linkedin.svg" alt="LinkedIn"></a>
-                <a class="bg-white" href="#"><img width="25px" src="/assets/github.svg" alt="GitHub"></a>
-                <a class="bg-white" href="#"><img width="25px" src="/assets/instagram.svg" alt="Instagram"></a>
-            </div>
-        </article>
-    </section>
+        <div class="flex flex-wrap justify-center gap-3">
+            <a class="bg-white" href="https://www.linkedin.com/in/danielcvillamizar/"  target="_blank" rel="noopener noreferrer"><img width="25px" src="/assets/linkedin.svg" alt="LinkedIn"></a>
+            <a class="bg-white" href="https://github.com/pucara05"  target="_blank" rel="noopener noreferrer"><img width="25px" src="/assets/github.svg" alt="GitHub"></a>
+            <a class="bg-white" href="#"><img width="25px" src="/assets/instagram.svg" alt="Instagram"></a>
+        </div>
+    </article>
+</section>
 
 
     <!-- section three -->
-    <section class="bg-stone-950 p-10% py-5 dark:bg-white ">
+    <section  id="projects"  class="bg-stone-950 p-10% py-5 dark:bg-white ">
         <h2 class=" flex  justify-center text-white dark:text-black p-10 text-2xl">Projects</h2>
         <article class="flex flex-wrap justify-center items-center gap-10">
             <div class="w-72 h-auto flex flex-col gap-2 justify-center items-center bg-white border-2 rounded-lg">
@@ -147,7 +146,7 @@
                     consectetur
                     repellat perferendis.
                 </p>
-                <a class=" bg-white" href="#"><img width="30px" src="/assets/github.svg" alt="ir a github"></a>
+                <a class=" bg-white" href="https://github.com/pucara05"><img width="30px" src="/assets/github.svg" alt="ir a github"></a>
 
             </div>
 
@@ -175,16 +174,17 @@
     </section>
 
     <!--footer -->
-    <footer
+    <footer id="contact"
         class="w-full h-30vh bg-stone-950 p-10% py-5 flex flex-col justify-center items-center  dark:text-black text-white gap-7 dark:bg-white">
         <div class="redes flex gap-4">
-            <a class="dark:bg-black" href="#"><img width="30px" src="/assets/linkedin.svg" alt=""></a>
-            <a class="dark:bg-black" href="#"><img width="30px" src="/assets/github.svg" alt=""></a>
-            <a class="dark:bg-black" href="#"><img width="30px" src="/assets/linkedin.svg" alt=""></a>
+            <a class="dark:bg-black" href="https://www.linkedin.com/in/danielcvillamizar/"  target="_blank" rel="noopener noreferrer"><img width="30px" src="/assets/linkedin.svg" alt=""></a>
+            <a class="dark:bg-black" href="https://github.com/pucara05"  target="_blank" rel="noopener noreferrer"><img width="30px" src="/assets/github.svg" alt=""></a>
+            <a class="dark:bg-black" href="#"  target="_blank" rel="noopener noreferrer"><img width="30px" src="/assets/gmail.svg" alt=""></a>
             <span>LOGO</span>
-
         </div>
-        <h3>Hecho por Daniel Cardenas © COPYRIGHT- 2024</h3>
+        <div >
+        <h3 >Hecho por Daniel Cardenas © COPYRIGHT- 2024</h3>
+        </div>
     </footer>
     <script src="./script.js"></script>
 

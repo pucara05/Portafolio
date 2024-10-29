@@ -1,0 +1,42 @@
+.redes img{
+    filter: invert(96%) sepia(0%) saturate(7483%) hue-rotate(103deg) brightness(107%) contrast(102%);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*Header */
+
+@media (max-width: 640px) {
+    /* Aplica estilo al header */
+    header {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        height: auto; /* Ajusta la altura al contenido */
+        gap: 1rem; /* Añade un espacio entre los elementos */
+    }
+
+    /* Aplica estilo al nav para que los enlaces se muestren en columna */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* El ancho completo del nav en pantallas pequeñas */
+    }
+
+    /* Los enlaces dentro del nav ocupan el ancho completo y están centrados */
+    header nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* El botón de tema se coloca al final */
+    #toggle-theme {
+        align-self: flex-end;
+    }
+}
+
+
+
+
+

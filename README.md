@@ -59,20 +59,27 @@ Abre tu navegador y ve a http://localhost:8080 (si usas Live Server) para ver el
 plaintext
 Copy code
 📁 Portafolio
+
 ![image](https://github.com/user-attachments/assets/7ad0ad22-a578-4dae-80b6-5066640cf37c)
 
 
 🌙 Funcionalidades
 Responsividad: Optimizado para ser completamente responsivo y adaptarse a diferentes tamaños de pantalla.
 Tema Oscuro: Incluye un botón para cambiar entre temas claro y oscuro.
+
 🤝 Contribuciones
 Si deseas contribuir a este proyecto, sigue estos pasos:
 
 Realiza un fork del proyecto.
+
 Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+
 Realiza tus cambios y haz commit (git commit -m 'Agrega nueva funcionalidad').
+
 Sube tus cambios (git push origin feature/nueva-funcionalidad).
+
 Abre un Pull Request en el repositorio original.
+
 📬 Contacto
 Si deseas contactarme, aquí tienes mis datos de contacto:
 

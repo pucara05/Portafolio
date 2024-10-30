@@ -56,9 +56,6 @@ Inicia un servidor en vivo: Puedes usar una extensión como Live Server en Visua
 Abre tu navegador y ve a http://localhost:8080 (si usas Live Server) para ver el portafolio en acción.
 
 📁 Estructura del Proyecto
-plaintext
-Copy code
-📁 Portafolio
 
 ![image](https://github.com/user-attachments/assets/7ad0ad22-a578-4dae-80b6-5066640cf37c)
 

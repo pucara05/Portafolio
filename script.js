@@ -26,3 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //Menu desplegable
+// Selecciona el botón de menú y el menú de navegación
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+// Función para alternar la visibilidad del menú en móvil
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("hidden");
+});
+
+// Función para mostrar el menú automáticamente en pantallas grandes
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 640) { // 640px es el punto de quiebre 'sm' en Tailwind
+        navMenu.classList.remove("hidden"); // Muestra el menú en pantallas grandes
+    } else {
+        navMenu.classList.add("hidden"); // Oculta el menú en pantallas pequeñas
+    }
+});

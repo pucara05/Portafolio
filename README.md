@@ -59,12 +59,6 @@ Abre tu navegador y ve a http://localhost:8080 (si usas Live Server) para ver el
 plaintext
 Copy code
 📁 Portafolio
-├── dist/               # Archivos compilados para producción
-│── css/            # Archivos CSS
-│── js/             # Archivos JavaScript
-│── index.html      # Página principal
-├── package.json        # Dependencias y scripts del proyecto
-└── README.md           # Este archivo
 ![image](https://github.com/user-attachments/assets/7ad0ad22-a578-4dae-80b6-5066640cf37c)
 
 

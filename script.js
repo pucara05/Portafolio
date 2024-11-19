@@ -39,7 +39,10 @@ menuToggle.addEventListener("click", () => {
 window.addEventListener("resize", () => {
     if (window.innerWidth >= 640) { // 640px es el punto de quiebre 'sm' en Tailwind
         navMenu.classList.remove("hidden"); // Muestra el menú en pantallas grandes
-    } else {
-        navMenu.classList.add("hidden"); // Oculta el menú en pantallas pequeñas
     }
 });
+
+// Asegúrate de que el menú esté visible por defecto si se carga en pantallas grandes
+if (window.innerWidth >= 640) {
+    navMenu.classList.remove("hidden");
+}

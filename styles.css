@@ -39,4 +39,24 @@
 
 
 
+/* Configuración base para los íconos */
+.skill-icon {
+    filter: grayscale(100%); /* Grises por defecto */
+    transition: filter 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover: ilumina el ícono */
+.skill-icon:hover {
+    filter: grayscale(0%); /* Quita grises */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+/* Modo oscuro: adapta colores */
+.dark-mode .skill-icon {
+    filter: invert(1); /* Invierte colores para SVG oscuros */
+}
+
+
+
 

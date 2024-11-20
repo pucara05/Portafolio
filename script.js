@@ -46,3 +46,10 @@ window.addEventListener("resize", () => {
 if (window.innerWidth >= 640) {
     navMenu.classList.remove("hidden");
 }
+
+
+const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+};
+
+document.querySelector('#darkModeToggle').addEventListener('click', toggleDarkMode);
